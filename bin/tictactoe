@@ -72,7 +72,6 @@ def program
     sleep(2.5)
 
     100.times do
-      iter += 0.005
       Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O")).play
     end
     sleep(1)
